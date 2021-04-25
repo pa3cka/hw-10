@@ -40,23 +40,8 @@ Například: je-li počet prvků 3 2, pak je 2 uložen na 3. pozici pole počtu.
 ![3](https://cdn.programiz.com/cdn/farfuture/6A5S6vY-KsapHcyBjGgLNrp-58NRdyGDeVXspSzUbwM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-3.png)
 
 ### Najdeme index každého prvku původního pole v poli počítání. To udává kumulativní počet. Umístíme prvek na index vypočítaný podle obrázku níže.
-![4](https://cdn.programiz.com/cdn/farfuture/CIyC1Lkj5JFln_hjy8U1acmUZ4JST__v4bQBvPcnOkk/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4.png)
+![4](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
 ### Po umístění každého prvku do správné polohy snížíme jeho počet o jeden.
-
-Pseudokód:
-
-countingSort(array, size)
-  max <- nalezni find largest element in array
-  initialize count array with all zeros
-  for j <- 0 to size
-    find the total count of each unique element and 
-    store the count at jth index in count array
-  for i <- 1 to max
-    find the cumulative sum and store it in count array itself
-  for j <- size down to 1
-    restore the elements to array
-    decrease count of each element restored by 1
-
 
 
     
