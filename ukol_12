@@ -1,0 +1,6 @@
+def main():
+    print("Řazení a počítání slov")
+
+
+if __name__ == "__main__":
+    main()
