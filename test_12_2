@@ -9,7 +9,7 @@ from ukol_12 import counting_sort
          ['jazyce', 'kurzu', 'programovani', 'python.', 'v', 'v', 'vitejte']),
     ]
 )
-def test_12_2(unsorted_words):
+def test_12_2(unsorted_words, unsorted_words_exp, word_counts, word_counts_exp):
     sorted_words, word_counts = counting_sort(unsorted_words)
     
     assert sorted_words == sorted_words_exp 
