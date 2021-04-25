@@ -27,20 +27,20 @@ Counting Sort je řadicí algoritmus, který třídí prvky pole počítáním p
 
 ## Jak Counting Sort pracuje?
 ### Zjistíme maximální prvek (`max`) ze vstupního pole.
-![alt text](https://cdn.programiz.com/cdn/farfuture/_iojSNQFxCvNdbdPPmMVCJZxGFTS0TOZRIt1E4Wte0Y/mtime:1582112622/sites/tutorial2program/files/Counting-sort-0_0.png)
+![0](https://cdn.programiz.com/cdn/farfuture/_iojSNQFxCvNdbdPPmMVCJZxGFTS0TOZRIt1E4Wte0Y/mtime:1582112622/sites/tutorial2program/files/Counting-sort-0_0.png)
 
 ### Inicializujeme pole délky `max+1` se všemi prvky 0. Toto pole bude využito pro ukládání počtu prvků v poli.
-![alt text](https://cdn.programiz.com/cdn/farfuture/bRDNfPQG8lie6m7EFXVqPj8w6RzkRhM34XNaAoG2dCs/mtime:1582112622/sites/tutorial2program/files/Counting-sort-1.png)
+![1](https://cdn.programiz.com/cdn/farfuture/bRDNfPQG8lie6m7EFXVqPj8w6RzkRhM34XNaAoG2dCs/mtime:1582112622/sites/tutorial2program/files/Counting-sort-1.png)
 
 ### Uložíme počet každého prvku v jejich příslušném indexu v poli `count`
 Například: je-li počet prvků 3 2, pak je 2 uložen na 3. pozici pole počtu. Pokud prvek „5“ v poli není, je 0 uložen na 5. pozici.
-![alt text](https://cdn.programiz.com/cdn/farfuture/CIyC1Lkj5JFln_hjy8U1acmUZ4JST__v4bQBvPcnOkk/mtime:1582112622/sites/tutorial2program/files/Counting-sort-2.png)
+![2](https://cdn.programiz.com/cdn/farfuture/CIyC1Lkj5JFln_hjy8U1acmUZ4JST__v4bQBvPcnOkk/mtime:1582112622/sites/tutorial2program/files/Counting-sort-2.png)
 
 ### Uložíme kumulativní součet prvků počítacího pole. Pomůže nám při umisťování prvků do správného indexu seřazeného pole.
-![alt text](https://cdn.programiz.com/cdn/farfuture/CIyC1Lkj5JFln_hjy8U1acmUZ4JST__v4bQBvPcnOkk/mtime:1582112622/sites/tutorial2program/files/Counting-sort-3.png)
+![3](https://cdn.programiz.com/cdn/farfuture/6A5S6vY-KsapHcyBjGgLNrp-58NRdyGDeVXspSzUbwM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-3.png)
 
 ### Najdeme index každého prvku původního pole v poli počítání. To udává kumulativní počet. Umístíme prvek na index vypočítaný podle obrázku níže.
-![alt text](https://cdn.programiz.com/cdn/farfuture/CIyC1Lkj5JFln_hjy8U1acmUZ4JST__v4bQBvPcnOkk/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4.png)
+![4](https://cdn.programiz.com/cdn/farfuture/CIyC1Lkj5JFln_hjy8U1acmUZ4JST__v4bQBvPcnOkk/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4.png)
 ### Po umístění každého prvku do správné polohy snížíme jeho počet o jeden.
 
 Pseudokód:
