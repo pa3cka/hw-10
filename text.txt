@@ -1,0 +1,1 @@
+Vitejte v kurzu programovani v jazyce Python.
