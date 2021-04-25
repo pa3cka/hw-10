@@ -1,0 +1,15 @@
+import pytest
+
+from ukol_12 import read_data
+
+@pytest.mark.parametrize(
+    ('file_name', 'expected'),
+    [
+        ('text.txt',
+         ['Vitejte v kurzu programovani v jazyce Python.']),
+    ]
+)
+def test_12_1(file_name,expected):
+    unsorted_words = read_data(file_name)
+    
+    assert file_name == expected 
