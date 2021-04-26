@@ -1,0 +1,3 @@
+Milovat Python znamena zit a trpet v debuggovacim rezimu.
+Nemuzes zastavit vlnu zkousek z Pythonu, ale muzes se naucit surfovat.
+Kdykoliv zacnete pochybovat jestli muzete jit dal vzpomente si na testy z Pythonu!

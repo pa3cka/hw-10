@@ -1,5 +1,11 @@
+
+
 def main():
-    print("Řazení a počítání slov")
+    pass
+
+    # read data
+
+    # sort sequence
 
 
 if __name__ == "__main__":
