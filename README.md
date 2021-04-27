@@ -87,11 +87,14 @@ V našem příkladu níže máme na první pozici token s hodnotou `4`. Jeho kum
 Na této pozici leží hodnota `6`. Po odečtení jedničky tedy získáme index toho prvku v seřazené sekvenci. První prvek z půovdní sekvence
 bude v seřazené sekvenci vložen na index číslo `5`. V našem případě může být postup následující:
 
-* Sekvečně projdeme seznam s tokeny (nejlépe pomocí indexace nebo po "zipnutí" se seznamem slov).
+* Sekvenčně projdeme seznam s tokeny (nejlépe pomocí indexace nebo po "zipnutí" se seznamem slov).
 * Pro každý token nalezneme jeho kumulativní četnost a od této hodnoty odečteme jedničku.
 * Do pole pro ukládání seřazených slov uložíme na index z bodu 2 slovo z neseřazeného seznamu, jehož pořadí odpovídá pořadí právě analyzovanéh tokenu.
 * Po umístění prvku do správné polohy snížíme jeho kumulativní četnost o jeden (abychom nepřiřazovali stejné tokeny vždy do jedné pozice.
 * Máme seřazeno!
+
+> Counting Sort je <b>stabilní</b> třídí algoritmus. Pozor tedy na zachování relativního pořadí jednotlivých slov. Kumulativní četnost určuje vždy poslední výskyt stejného prvku. Pokud však řadíme slova od prvního po poslední, bude důsledkem změna směru relativního pořadí (stejné prvky budou seřazeny v opačném pořadí oproti původní sekvenci). Problém můžeme vyřešit buď reverzním procházením řazené sekvence nebo vhodnou úpravou indexace při plnění seřazené sekvence.
+
 ![4](https://cdn.programiz.com/cdn/farfuture/tcfjQdeYwL_jETOCPZxNjIXbysRrb7MaG6PwO2MzHnM/mtime:1582112622/sites/tutorial2program/files/Counting-sort-4_1.png)
 
 
