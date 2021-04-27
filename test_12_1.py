@@ -52,7 +52,7 @@ def test_12_2(input_list, expected):
     [
         ([], {'sorted_sequence': [], 'frequency': TEST_31}),
         (['alfons'], {'sorted_sequence': ['alfons'], 'frequency': TEST_32}),
-        (['a', 'jestli', 'muzete', 'jit', 'dal'], {'sorted_sequence': ['a', 'dal', 'jit', 'jestli', 'muzete'], 'frequency': TEST_33})
+        (['a', 'jestli', 'muzete', 'jit', 'dal'], {'sorted_sequence': ['a', 'dal', 'jestli', 'jit', 'muzete'], 'frequency': TEST_33})
     ]
 )
 def test_12_3(unsorted_words, expected):
